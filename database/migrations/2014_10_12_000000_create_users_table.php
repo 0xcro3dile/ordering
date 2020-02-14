@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->boolean('verified_email')->default(false);
             $table->boolean('verified_mobile')->default(false);
             $table->unsignedBigInteger('billing_address');
-            $table->timestamp('email_verified_at')->nullable();
+            $table->unsignedBigInteger('shipping_address');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
