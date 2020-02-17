@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->string('prepare_time')->nullable();
             $table->string('chef')->nullable();
             $table->unsignedInteger('likes')->default(0);
-            $table->unsignedInteger('store_id');
+            $table->unsignedInteger('restaurant_id');
             $table->unsignedInteger('user_id');
 
 
