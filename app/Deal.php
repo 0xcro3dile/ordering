@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CartItem extends Model
+class Deal extends Model
 {
     protected $fillable = [
-   'product_id','cart_id','qty','price','line_total',
+      'end_at','qty','discount',
     ];
 }
